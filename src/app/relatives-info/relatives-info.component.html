@@ -1,0 +1,16 @@
+<h4>Relatives Info Form</h4>
+<ng-container [formGroup]="form">
+    <div class="row">
+        <label for="Type"> Type </label>
+        <select formControlName="type">
+            <option [value]="'father'">Father</option>
+            <option [value]="'mother'">Mother</option>
+            <option [value]="'brother'">Brother</option>
+            <option [value]="'other'">Other</option>
+        </select>
+        </div>
+    <div class="row">
+        <label for="Phone number"> Phone Number </label>
+        <input type="text" formControlName="phoneNumber">
+    </div>
+</ng-container>

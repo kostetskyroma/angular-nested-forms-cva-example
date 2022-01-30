@@ -1,0 +1,8 @@
+:host {
+    display: flex;
+    border: 1px solid red;
+
+    .container {
+        min-width: 50%;
+    }
+}

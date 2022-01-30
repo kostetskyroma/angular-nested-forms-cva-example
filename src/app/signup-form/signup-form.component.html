@@ -1,0 +1,17 @@
+
+<div class="container">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <app-basic-info formControlName="basicInfo"></app-basic-info>
+        <app-address-info formControlName="addressInfo"></app-address-info>
+        <app-relatives-info formControlName="relativesInfo"></app-relatives-info>
+
+        <button type="submit" [disabled]="form.invalid">Sign Up</button> 
+    </form>
+</div>
+<div>
+    <h3>Form Value</h3>
+    <pre [innerHTML]="form.value  | json"></pre>
+    <br>
+    <h3>Form Validity</h3>
+    {{ form.valid }}
+</div>
